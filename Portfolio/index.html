@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjeet — Editz Craft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./Logo/LOGO.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-text">
+        <span>E</span><span>C</span><span>.</span>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div class="nav-left">
+        <div class="logo-mark"><img src="./Logo/EC.png" alt="EC"></div>
+        <div class="logo-name">
+          Manjeet
+          <em>Editz Craft</em>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact" class="hire-btn">Hire Me</a>
+        <div class="theme-toggle-wrap">
+          <span class="theme-icon" id="themeIcon">
+            <!-- sun -->
+            <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4.5" />
+              <line x1="12" y1="2" x2="12" y2="4.5" />
+              <line x1="12" y1="19.5" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="4.5" y2="12" />
+              <line x1="19.5" y1="12" x2="22" y2="12" />
+              <line x1="4.93" y1="4.93" x2="6.64" y2="6.64" />
+              <line x1="17.36" y1="17.36" x2="19.07" y2="19.07" />
+              <line x1="4.93" y1="19.07" x2="6.64" y2="17.36" />
+              <line x1="17.36" y1="6.64" x2="19.07" y2="4.93" />
+            </svg>
+            <!-- moon (hidden by default) -->
+            <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              style="display:none">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-big-text">DESIGN</div>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-label">
+            <span class="hero-label-dot"></span>
+            Available for projects · India
+          </div>
+          <h1 class="hero-headline">
+            <span class="line"><span>THUMBNAIL</span></span>
+            <span class="line"><span></span></span>
+            <span class="line"><span>ARTIST.</span></span>
+          </h1>
+        </div>
+        <div class="hero-right">
+          <p class="hero-desc">
+            I'm <strong>Manjeet</strong> — the designer behind <strong>Editz Craft</strong>. I craft YouTube thumbnails
+            that make viewers stop, stare, and click. <strong>300+ projects</strong> across tech, gaming, finance &
+            health.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-fill">View Work →</a>
+            <a href="#contact" class="btn-ghost">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num">300<sup>+</sup></div>
+          <div class="hstat-label">Thumbnails Made</div>
+        </div>
+        <div class="hstat" style="padding-left:40px;">
+          <div class="hstat-num">35<sup>+</sup></div>
+          <div class="hstat-label">Happy Clients</div>
+        </div>
+        <div class="hstat" style="padding-left:40px;">
+          <div class="hstat-num">2.5</div>
+          <div class="hstat-label">Years Experience</div>
+        </div>
+        <div class="hstat" style="padding-left:40px;">
+          <div class="hstat-num">100<sup>%</sup></div>
+          <div class="hstat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">YouTube Thumbnails <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Photoshop Expert <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Graphic Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Visual Storytelling <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Canva Pro <span class="marquee-dot"></span></span>
+        <span class="marquee-item">AI Design Tools <span class="marquee-dot"></span></span>
+        <span class="marquee-item">High CTR Designs <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+        <span class="marquee-item">YouTube Thumbnails <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Photoshop Expert <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Graphic Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Visual Storytelling <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Canva Pro <span class="marquee-dot"></span></span>
+        <span class="marquee-item">AI Design Tools <span class="marquee-dot"></span></span>
+        <span class="marquee-item">High CTR Designs <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <div id="work" class="scroll-gallery">
+
+      <!-- Row 1: right → left -->
+      <div class="scroll-row scroll-left">
+        <div class="scroll-track">
+          <div class="scroll-card" onclick="openLb('./Thumbnail/12.jpg')">
+            <img src="./Thumbnail/12.jpg" alt="Fix Gut Health">
+            <div class="bento-info">
+              <div class="bento-cat">Health / Doctor Channel</div>
+              <div class="bento-title">Fix Gut Health in 7 Days</div>
+            </div>
+            <span class="bento-tag">Health</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_11.jpg')">
+            <img src="./Thumbnail/Layer_11.jpg" alt="Must Watch Before Buying">
+            <div class="bento-info">
+              <div class="bento-cat">Tech Review</div>
+              <div class="bento-title">Must Watch Before Buying</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/e.jpg')">
+            <img src="./Thumbnail/e.jpg" alt="Lenovo LOQ">
+            <div class="bento-info">
+              <div class="bento-cat">Laptop Review</div>
+              <div class="bento-title">Lenovo LOQ in 2026?</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_17.jpg')">
+            <img src="./Thumbnail/Layer_17.jpg" alt="7 Foods">
+            <div class="bento-info">
+              <div class="bento-cat">Health</div>
+              <div class="bento-title">7 Foods Damaging Your Gut</div>
+            </div>
+            <span class="bento-tag">Health</span>
+          </div>
+          <!-- duplicate for seamless loop -->
+          <div class="scroll-card" onclick="openLb('./Thumbnail/12.jpg')">
+            <img src="./Thumbnail/12.jpg" alt="Fix Gut Health">
+            <div class="bento-info">
+              <div class="bento-cat">Health / Doctor Channel</div>
+              <div class="bento-title">Fix Gut Health in 7 Days</div>
+            </div>
+            <span class="bento-tag">Health</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_11.jpg')">
+            <img src="./Thumbnail/Layer_11.jpg" alt="Must Watch Before Buying">
+            <div class="bento-info">
+              <div class="bento-cat">Tech Review</div>
+              <div class="bento-title">Must Watch Before Buying</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/e.jpg')">
+            <img src="./Thumbnail/e.jpg" alt="Lenovo LOQ">
+            <div class="bento-info">
+              <div class="bento-cat">Laptop Review</div>
+              <div class="bento-title">Lenovo LOQ in 2026?</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_17.jpg')">
+            <img src="./Thumbnail/Layer_17.jpg" alt="7 Foods">
+            <div class="bento-info">
+              <div class="bento-cat">Health</div>
+              <div class="bento-title">7 Foods Damaging Your Gut</div>
+            </div>
+            <span class="bento-tag">Health</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: left → right -->
+      <div class="scroll-row scroll-right">
+        <div class="scroll-track">
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_15.jpg')">
+            <img src="./Thumbnail/Layer_15.jpg" alt="Best Laptop">
+            <div class="bento-info">
+              <div class="bento-cat">Comparison</div>
+              <div class="bento-title">Best Laptop Under 50K</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/asdcxa.jpg')">
+            <img src="./Thumbnail/asdcxa.jpg" alt="Live Trading">
+            <div class="bento-info">
+              <div class="bento-cat">Finance</div>
+              <div class="bento-title">Live Trading Session</div>
+            </div>
+            <span class="bento-tag">Finance</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_19.jpg')">
+            <img src="./Thumbnail/Layer_19.jpg" alt="Nifty BankNifty">
+            <div class="bento-info">
+              <div class="bento-cat">Finance</div>
+              <div class="bento-title">Nifty & BankNifty Live</div>
+            </div>
+            <span class="bento-tag">Finance</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/5.jpg')">
+            <img src="./Thumbnail/5.jpg" alt="CS Rank Push">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming / Free Fire</div>
+              <div class="bento-title">CS Rank Live Push</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+          <!-- duplicate -->
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_15.jpg')">
+            <img src="./Thumbnail/Layer_15.jpg" alt="Best Laptop">
+            <div class="bento-info">
+              <div class="bento-cat">Comparison</div>
+              <div class="bento-title">Best Laptop Under 50K</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/asdcxa.jpg')">
+            <img src="./Thumbnail/asdcxa.jpg" alt="Live Trading">
+            <div class="bento-info">
+              <div class="bento-cat">Finance</div>
+              <div class="bento-title">Live Trading Session</div>
+            </div>
+            <span class="bento-tag">Finance</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/Layer_19.jpg')">
+            <img src="./Thumbnail/Layer_19.jpg" alt="Nifty BankNifty">
+            <div class="bento-info">
+              <div class="bento-cat">Finance</div>
+              <div class="bento-title">Nifty & BankNifty Live</div>
+            </div>
+            <span class="bento-tag">Finance</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/5.jpg')">
+            <img src="./Thumbnail/5.jpg" alt="CS Rank Push">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming / Free Fire</div>
+              <div class="bento-title">CS Rank Live Push</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: right → left -->
+      <div class="scroll-row scroll-left">
+        <div class="scroll-track">
+          <div class="scroll-card" onclick="openLb('./Thumbnail/12(1).jpg')">
+            <img src="./Thumbnail/12(1).jpg" alt="Design Career">
+            <div class="bento-info">
+              <div class="bento-cat">Education</div>
+              <div class="bento-title">Design Your Career</div>
+            </div>
+            <span class="bento-tag">Education</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/asdsa.jpg')">
+            <img src="./Thumbnail/asdsa.jpg" alt="Resident Evil">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming</div>
+              <div class="bento-title">Resident Evil Requiem</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/sdf.jpg')">
+            <img src="./Thumbnail/sdf.jpg" alt="RTX 5090">
+            <div class="bento-info">
+              <div class="bento-cat">Tech Review</div>
+              <div class="bento-title">Dream Laptop RTX 5090</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/35.jpg')">
+            <img src="./Thumbnail/35.jpg" alt="RE Part 2">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming / Live Stream</div>
+              <div class="bento-title">Resident Evil Requiem — Part 2</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+          <!-- duplicate -->
+          <div class="scroll-card" onclick="openLb('./Thumbnail/12(1).jpg')">
+            <img src="./Thumbnail/12(1).jpg" alt="Design Career">
+            <div class="bento-info">
+              <div class="bento-cat">Education</div>
+              <div class="bento-title">Design Your Career</div>
+            </div>
+            <span class="bento-tag">Education</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/asdsa.jpg')">
+            <img src="./Thumbnail/asdsa.jpg" alt="Resident Evil">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming</div>
+              <div class="bento-title">Resident Evil Requiem</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/sdf.jpg')">
+            <img src="./Thumbnail/sdf.jpg" alt="RTX 5090">
+            <div class="bento-info">
+              <div class="bento-cat">Tech Review</div>
+              <div class="bento-title">Dream Laptop RTX 5090</div>
+            </div>
+            <span class="bento-tag">Tech</span>
+          </div>
+          <div class="scroll-card" onclick="openLb('./Thumbnail/35.jpg')">
+            <img src="./Thumbnail/35.jpg" alt="RE Part 2">
+            <div class="bento-info">
+              <div class="bento-cat">Gaming / Live Stream</div>
+              <div class="bento-title">Resident Evil Requiem — Part 2</div>
+            </div>
+            <span class="bento-tag">Gaming</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="about-left">
+        <div class="about-logo-wrap">
+          <img
+            src="./Logo/LOGO.png"
+            alt="Editz Craft Logo">
+          <div class="about-logo-accent"></div>
+          <div class="about-badge">
+            2.5
+            <small>Years</small>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-eyebrow">About Me</div>
+        <h2 class="about-title">THE PERSON<br>BEHIND THE<br>PIXELS.</h2>
+        <p class="about-body">
+          Hey, I'm <strong>Manjeet</strong> — a graphic designer and visual storyteller operating under the brand
+          <strong>Editz Craft</strong>. I specialize in YouTube thumbnail design that drives real results for creators.
+        </p>
+        <p class="about-body">
+          My work spans <strong>tech, gaming, health, finance, and education</strong> channels. Each design is built
+          with
+          a single goal: make the viewer click. I combine bold typography, cinematic color grading, and psychological
+          visual cues to maximize CTR.
+        </p>
+        <div class="about-skills">
+          <span class="skill-chip">Photoshop</span>
+          <span class="skill-chip">Visual Storytelling</span>
+          <span class="skill-chip">YT Thumbnails</span>
+          <span class="skill-chip">Graphic Design</span>
+          <span class="skill-chip">Color Grading</span>
+          <span class="skill-chip">Typography</span>
+          <span class="skill-chip">Compositing</span>
+          <span class="skill-chip">Brand Identity</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="tools-section" id="tools">
+      <div class="section-row">
+        <div>
+          <div class="section-num">03 — My Arsenal</div>
+          <h2 class="section-heading">Tools I <em>Master</em></h2>
+        </div>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <span class="tool-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/50/a9/2050a983-4ac4-078a-e3fc-ff8f132f857b/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div class="tool-name">Adobe Photoshop</div>
+          <div class="tool-desc">Professional-grade compositing, retouching, color grading, and advanced layer
+            techniques.
+            My primary weapon for every project.</div>
+          <div class="tool-num">01</div>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/71/fa/0371fafe-fba2-6ddb-8841-151f40aefd6f/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div class="tool-name">Canva Pro</div>
+          <div class="tool-desc">Rapid prototyping, social media graphics, and client-friendly deliverables. Speed
+            without
+            sacrificing quality.</div>
+          <div class="tool-num">02</div>
+        </div>
+        <div class="tool-card">
+          <span class="tool-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/0e/25/4d0e2539-dc7e-4d6f-0d70-9d42a1a4f75d/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div class="tool-name">AI Design Tools</div>
+          <div class="tool-desc">Leveraging AI for background generation, upscaling, and concept exploration. Staying
+            ahead of the design curve.</div>
+          <div class="tool-num">03</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section">
+      <div class="section-row">
+        <div>
+          <div class="section-num">04 — How I Work</div>
+          <h2 class="section-heading">My <em>Process</em></h2>
+        </div>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-circle">01</div>
+          <div class="step-title">Brief</div>
+          <div class="step-desc">Understanding your channel, niche, audience, and what emotion you want the thumbnail to
+            trigger.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">02</div>
+          <div class="step-title">Concept</div>
+          <div class="step-desc">Sketching visual ideas, picking the right layout, color psychology, and font
+            combination
+            for impact.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">03</div>
+          <div class="step-title">Execute</div>
+          <div class="step-desc">Full Photoshop production — compositing, color grade, typography, and final polish in
+            every pixel.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">04</div>
+          <div class="step-title">Deliver</div>
+          <div class="step-desc">Fast turnaround with unlimited revisions until you love it. Files in all formats you
+            need.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <div class="quote-section">
+      <p class="big-quote">"A great thumbnail is not just design — it's a <em>promise</em> to the viewer."</p>
+      <p class="quote-meta">— Manjeet, Editz Craft</p>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+      <div class="cta-left">
+        <div class="cta-label">Let's Work Together</div>
+        <h2 class="cta-headline">GOT A<br>PROJECT?<br><span class="acc">LET'S GO.</span></h2>
+        <p class="cta-sub">Whether you're a new creator or an established channel looking to boost CTR — I'm ready to
+          build thumbnails that convert.</p>
+      </div>
+      <div class="cta-right">
+        <a href="mailto:crafteditz21@gmail.com" target="_blank" class="contact-row">
+          <span class="contact-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/50/ef/9f50ef77-1acd-362f-a0a3-6b36f25eded1/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">editzcraft@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://wa.me/918743942264?text=Hi%20Manjeet!%0A%0AI%20just%20went%20through%20your%20portfolio%20on%20Editz%20Craft%20and%20honestly%2C%20your%20work%20is%20incredible.%20The%20way%20you%20design%20thumbnails%20is%20exactly%20what%20I%20was%20looking%20for.%0A%0AI%20run%20a%20content%20channel%20and%20I%20really%20want%20to%20take%20my%20visuals%20to%20the%20next%20level.%20I%20believe%20your%20style%20would%20be%20a%20perfect%20fit%20for%20my%20content.%0A%0AWould%20love%20to%20connect%20and%20discuss%20how%20we%20can%20work%20together.%20Looking%20forward%20to%20hearing%20from%20you!" target="_blank" class="contact-row">
+          <span class="contact-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/a6/a4/75a6a4ae-5302-1ce6-5ab9-ab8fa469ca06/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val">Chat on WhatsApp</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/editz.craft/" target="_blank" class="contact-row">
+          <span class="contact-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/3b/d6/443bd6f1-5b0d-86e5-e52f-a8b30f657606/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div>
+            <div class="contact-label">Instagram</div>
+            <div class="contact-val">@editzcraft</div>
+          </div>
+        </a>
+        <a href="https://www.fiverr.com/s/DBp40Ea" target="_blank" class="contact-row">
+          <span class="contact-icon"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/83/60/708360e7-34f7-3b83-bbd3-6d5ae799caac/Placeholder.mill/400x400bb-75.webp"
+              alt=""></span>
+          <div>
+            <div class="contact-label">Fiverr / Freelance</div>
+            <div class="contact-val">Hire on Fiverr</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-brand">EDITZ<span>CRAFT</span></div>
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Manjeet · All Rights Reserved</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lb" id="lb" onclick="closeLb()">
+      <button class="lb-close" onclick="closeLb()">✕</button>
+      <img id="lb-img" src="" alt="">
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
